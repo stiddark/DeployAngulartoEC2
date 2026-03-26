@@ -22,6 +22,6 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "dist/nombre-de-tu-proyecto/*" # Ruta de los archivos generados
+          source: "dist/deployAngulartoEC2/*"
           target: "/var/www/html"
-          strip_components: 3 # Ajusta según tu estructura de carpetas
+          strip_components: 3
